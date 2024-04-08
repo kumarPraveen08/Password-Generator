@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <meta name="description" content="A Simple tool to generator strong password.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="tool">
+            <input type="text" id="input" placeholder="generate new password" onclick="this.select()" readonly>
+            <div id="copy">Copy</div>
+            <div class="options">
+                <div class="option">
+                    <label for="length">Length (3 to 64)</label>
+                    <input type="number" name="length" value="16" id="length">
+                </div>
+                <div class="option">
+                    <label for="uppercase">Uppercase Letter (A-Z)</label>
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                </div>
+                <div class="option">
+                    <label for="lowercase">Lowercase Letter (a-z)</label>
+                    <input type="checkbox" name="lowercase" id="lowercase">
+                </div>
+                <div class="option">
+                    <label for="number">Number (0-9)</label>
+                    <input type="checkbox" name="number" id="number">
+                </div>
+                <div class="option">
+                    <label for="special">Special Characters (!@#$%^&*()+)</label>
+                    <input type="checkbox" name="special" id="special">
+                </div>
+                <div class="option">
+                    <label for="other">Other Characters (~`[];?,)</label>
+                    <input type="checkbox" name="other" id="other">
+                </div>
+            </div>
+            <button id="btn" onclick="generatePassword()">Generate</button>
+        </div>
+
+        <div class="copyright">Created by Praveen Prajapati</div>
+    </div>
+
+    
+    <audio id="myAudio" src="./assets/c.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

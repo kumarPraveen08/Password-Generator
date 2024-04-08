@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 28px;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+    width: 700px;
+    flex-direction: column;
+}
+
+.tool {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+    color: tomato;
+}
+
+input[type="text"] {
+    width: 600px;
+    padding: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.options {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option > input {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.tool > #copy {
+    position: absolute;
+    right: 30px;
+    height: 75px;
+    width: 125px;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+
+#myAudio {
+    display: none;
+}
+
+.option > input#length {
+    width: 80px;
+    cursor: pointer;
+}
+
+#btn {
+    padding: 20px;
+    cursor: pointer;
+    width: 100%;
+    background-color: tomato;
+    border: none;
+    color: white;
+}
+
+.copyright {
+    font-size: 18px;
+    color: #9d9d9d;
+    margin-top: 40px;
+}
